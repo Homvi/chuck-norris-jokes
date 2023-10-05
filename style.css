@@ -14,4 +14,14 @@ body {
   background-color: #e3c7c3;
 }
 
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .nes-container {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
