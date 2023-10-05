@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100lvh;
+}
+
+.container {
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #e3c7c3;
+}
