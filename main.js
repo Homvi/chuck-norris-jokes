@@ -19,7 +19,6 @@ function getJoke() {
         return joke;
     });
 }
-jokeUrl = 2;
 //display joke
 function displayJoke() {
     return __awaiter(this, void 0, void 0, function* () {

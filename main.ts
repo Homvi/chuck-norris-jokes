@@ -1,7 +1,7 @@
 const nextBtn = document.querySelector("#next");
 
 //save url into a variable
-const jokeUrl:string = "https://api.chucknorris.io/jokes/random";
+const jokeUrl: string = "https://api.chucknorris.io/jokes/random";
 
 //fetch joke
 async function getJoke() {
@@ -14,13 +14,13 @@ async function getJoke() {
 async function displayJoke() {
   const joke = await getJoke();
   const jokeElement = document.querySelector("#joke");
- if (jokeElement){
-     jokeElement.innerHTML = joke.value;
- }
+  if (jokeElement) {
+    jokeElement.innerHTML = joke.value;
+  }
 }
 
 //display joke on click of next button and on page load
 document.addEventListener("DOMContentLoaded", displayJoke);
 if (nextBtn) {
-    nextBtn.addEventListener("click", displayJoke);
+  nextBtn.addEventListener("click", displayJoke);
 }
